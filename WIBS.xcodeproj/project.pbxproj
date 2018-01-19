@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E11F29232012A62C008DA9C8 /* ResultTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11F29222012A62C008DA9C8 /* ResultTwoViewController.swift */; };
+		E16E46532011852300EC2F9E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16E46522011852300EC2F9E /* GameViewController.swift */; };
+		E16E46552011866A00EC2F9E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16E46542011866A00EC2F9E /* ResultViewController.swift */; };
 		E19F085F20116364008224DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F085E20116364008224DA /* AppDelegate.swift */; };
 		E19F086120116364008224DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F086020116364008224DA /* ViewController.swift */; };
 		E19F086420116364008224DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19F086220116364008224DA /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E11F29222012A62C008DA9C8 /* ResultTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTwoViewController.swift; sourceTree = "<group>"; };
+		E16E46522011852300EC2F9E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E16E46542011866A00EC2F9E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		E19F085B20116363008224DA /* WIBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WIBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19F085E20116364008224DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E19F086020116364008224DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +107,9 @@
 			children = (
 				E19F085E20116364008224DA /* AppDelegate.swift */,
 				E19F086020116364008224DA /* ViewController.swift */,
+				E16E46522011852300EC2F9E /* GameViewController.swift */,
+				E16E46542011866A00EC2F9E /* ResultViewController.swift */,
+				E11F29222012A62C008DA9C8 /* ResultTwoViewController.swift */,
 				E19F086220116364008224DA /* Main.storyboard */,
 				E19F086820116364008224DA /* Assets.xcassets */,
 				E19F086A20116364008224DA /* LaunchScreen.storyboard */,
@@ -262,6 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E11F29232012A62C008DA9C8 /* ResultTwoViewController.swift in Sources */,
+				E16E46552011866A00EC2F9E /* ResultViewController.swift in Sources */,
+				E16E46532011852300EC2F9E /* GameViewController.swift in Sources */,
 				E19F086120116364008224DA /* ViewController.swift in Sources */,
 				E19F085F20116364008224DA /* AppDelegate.swift in Sources */,
 				E19F086720116364008224DA /* WIBS.xcdatamodeld in Sources */,
@@ -431,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TU32622BQ;
 				INFOPLIST_FILE = WIBS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iOSHackathon.WIBS;
@@ -445,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TU32622BQ;
 				INFOPLIST_FILE = WIBS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iOSHackathon.WIBS;
