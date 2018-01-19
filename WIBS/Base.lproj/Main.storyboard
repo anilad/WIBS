@@ -274,35 +274,32 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26d-ND-bvo">
-                                <rect key="frame" x="16" y="20" width="343" height="38"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <state key="normal" title="Play Again">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6Y-YD-CzH">
+                                <rect key="frame" x="16" y="36" width="343" height="41"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.98158753620000005" green="0.97560431380000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="goBackToOneButtonTapped:" destination="59N-kQ-C50" eventType="touchUpInside" id="38r-7Z-ZEu"/>
+                                    <segue destination="4Ik-fq-2Cj" kind="unwind" unwindAction="unwindToBrendanWithSegue:" id="3it-Fl-BF6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="tCP-fh-Dqe" firstAttribute="leading" secondItem="oiX-S1-wcO" secondAttribute="leading" id="1Nd-Xq-wIf"/>
-                            <constraint firstItem="26d-ND-bvo" firstAttribute="leading" secondItem="oiX-S1-wcO" secondAttribute="leading" constant="16" id="535-WF-AOy"/>
+                            <constraint firstItem="E6Y-YD-CzH" firstAttribute="top" secondItem="oiX-S1-wcO" secondAttribute="top" constant="16" id="F5E-oz-Hoo"/>
                             <constraint firstItem="tCP-fh-Dqe" firstAttribute="top" secondItem="oiX-S1-wcO" secondAttribute="top" id="O13-qy-3Pw"/>
                             <constraint firstItem="Htz-JJ-yNy" firstAttribute="leading" secondItem="oiX-S1-wcO" secondAttribute="leading" constant="16" id="PzO-cW-hoN"/>
+                            <constraint firstItem="oiX-S1-wcO" firstAttribute="trailing" secondItem="E6Y-YD-CzH" secondAttribute="trailing" constant="16" id="Qo3-i5-XhC"/>
                             <constraint firstItem="oiX-S1-wcO" firstAttribute="bottom" secondItem="tCP-fh-Dqe" secondAttribute="bottom" id="UWa-bk-6ax"/>
-                            <constraint firstItem="oiX-S1-wcO" firstAttribute="trailing" secondItem="26d-ND-bvo" secondAttribute="trailing" constant="16" id="fIC-5S-c1H"/>
                             <constraint firstItem="oiX-S1-wcO" firstAttribute="trailing" secondItem="tCP-fh-Dqe" secondAttribute="trailing" id="kjv-BJ-ooe"/>
+                            <constraint firstItem="E6Y-YD-CzH" firstAttribute="leading" secondItem="oiX-S1-wcO" secondAttribute="leading" constant="16" id="maX-qJ-k7o"/>
                             <constraint firstItem="oiX-S1-wcO" firstAttribute="bottom" secondItem="Htz-JJ-yNy" secondAttribute="bottom" constant="16" id="nXf-qW-V3F"/>
                             <constraint firstItem="oiX-S1-wcO" firstAttribute="trailing" secondItem="Htz-JJ-yNy" secondAttribute="trailing" constant="16" id="nwg-zU-z2N"/>
-                            <constraint firstItem="26d-ND-bvo" firstAttribute="top" secondItem="oiX-S1-wcO" secondAttribute="top" id="sQW-iT-p7C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oiX-S1-wcO"/>
                     </view>
-                    <connections>
-                        <segue destination="4Ik-fq-2Cj" kind="unwind" unwindAction="unwindToVC1WithSegue:" id="TNX-4j-9ai"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ana-u8-M4N" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="4Ik-fq-2Cj" userLabel="Exit" sceneMemberID="exit"/>
@@ -333,7 +330,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="goBackToOneButtonTapped:" destination="qZf-xF-VS9" eventType="touchUpInside" id="Wcl-KI-XVT"/>
+                                    <action selector="goBackToOneButtonTapped:" destination="qZf-xF-VS9" eventType="touchUpInside" id="KZO-9h-fw6"/>
+                                    <segue destination="jhe-FE-tFF" kind="unwind" unwindAction="unwindToVC1WithSegue:" id="XAQ-0h-Xnq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03Q-V0-PQB">
@@ -344,7 +342,7 @@
                                 </state>
                                 <connections>
                                     <action selector="otherButtonPressed:" destination="qZf-xF-VS9" eventType="touchUpInside" id="x6g-4u-TLB"/>
-                                    <segue destination="59N-kQ-C50" kind="presentation" identifier="eliSegue" id="EiQ-Cw-07w"/>
+                                    <segue destination="59N-kQ-C50" kind="show" identifier="eliSegue" id="EiQ-Cw-07w"/>
                                 </connections>
                             </button>
                         </subviews>

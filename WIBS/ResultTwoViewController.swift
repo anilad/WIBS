@@ -21,9 +21,8 @@ class ResultTwoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
     @IBAction func goBackToOneButtonTapped(_ sender: Any) {
-        performSegue(withIdentifier: "unwindSegueToVC1", sender: self)
+        performSegue(withIdentifier: "unwindSegueToBrendan", sender: self)
     }
     
 }

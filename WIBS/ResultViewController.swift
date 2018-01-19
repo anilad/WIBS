@@ -30,4 +30,7 @@ class ResultViewController: UIViewController {
          performSegue(withIdentifier: "eliSegue", sender: self)
     }
     
+    @IBAction func unwindToBrendan(segue:UIStoryboardSegue) {
+        
+    }
 }
